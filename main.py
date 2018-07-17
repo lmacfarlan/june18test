@@ -2,7 +2,6 @@
 #   Here we provide a template to precit bitcoin price and deploy   #
 #   at scale on a user-defined schedule, taking advantage of        #
 #   Metis Machine curated data, and external 3rd party data.        #
-##
 
 ## Import some needed dependencies
 import os
@@ -184,7 +183,7 @@ hidden = model.init_hidden()
 
 # Train the model on 500 epochs
 # Ideally this number is tuned precisely
-NUM_EPOCHS = 500
+NUM_EPOCHS = 750
 for i in range(NUM_EPOCHS):
     def closure():
         model.zero_grad()
